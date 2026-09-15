@@ -68,6 +68,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           {p.intro ? <p>{p.intro}</p> : null}
           {p.image &&
             slug !== 'paket' &&
+            slug !== 'priser' &&
+            slug !== 'kurser' &&
             slug !== 'kurserpris' &&
             slug !== 'teori' &&
             !['kontakt', 'villkor', 'vagen-till-korkort'].includes(slug) && (

@@ -45,14 +45,14 @@ export default function Home() {
                 <span>Proffs</span><br />trafikskola.
               </h1>
               <p className="school-hero-intro">En pålitlig körskola med bra priser.<br />I Jakobsberg, Järfälla & Barkarby.</p>
-              <div className="school-hero-actions">
-                <Button href={business.shop}>Boka nu</Button>
-                <Link href="/korlektioner" className="school-hero-prices">Se körlektioner & priser <ArrowUpRight size={19} /></Link>
-              </div>
               <a className="school-hero-phone" href={`tel:${business.tel}`}>
                 <Phone size={21} />
                 <span>Prata med oss<strong>{business.phone}</strong></span>
               </a>
+              <div className="school-hero-actions">
+                <Button href={business.shop}>Boka nu</Button>
+                <Link href="/priser" className="school-hero-prices">Pricer <ArrowUpRight size={19} /></Link>
+              </div>
             </div>
         </div>
       </section>

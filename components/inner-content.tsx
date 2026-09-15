@@ -1,8 +1,10 @@
 import {
+  ArrowUpRight,
   FacebookLogo,
   InstagramLogo,
   TiktokLogo,
 } from '@phosphor-icons/react/dist/ssr';
+import Link from 'next/link';
 import {
   business,
   authority,
@@ -29,6 +31,66 @@ const theoryPriceCards = [
   { name: 'Teori online Bara sv/eng', price: '599kr' },
   { name: 'Teori online andra språk', price: '749kr' },
   { name: 'Teori Taxi', price: '3500kr' },
+];
+const priceOverviewCards = [
+  {
+    label: 'Snabb utbildning',
+    title: 'Intensivkurs',
+    text: 'Paket med körlektioner, Risk 1, Risk 2 och teori online.',
+    meta: 'Från 9.999kr',
+    href: '/intensivkurs',
+  },
+  {
+    label: 'Körträning',
+    title: 'Körlektioner',
+    text: 'Enstaka lektioner, testlektion och flera lektionspaket.',
+    meta: 'Från 499kr',
+    href: '/korlektioner',
+  },
+  {
+    label: 'Paket',
+    title: 'Paket Pris',
+    text: 'Samla körlektioner, Riskettan och teori online i ett paket.',
+    meta: 'Från 4.699kr',
+    href: '/paket',
+  },
+  {
+    label: 'Riskutbildning',
+    title: 'Kurser Pris',
+    text: 'Aktuella priser för Riskettan, Risktvåan och handledarstöd.',
+    meta: 'Från 599kr',
+    href: '/kurserpris',
+  },
+  {
+    label: 'Studier',
+    title: 'Teori',
+    text: 'Teori online på svenska, engelska, andra språk och taxi.',
+    meta: 'Från 599kr',
+    href: '/teori',
+  },
+];
+const courseOverviewCards = [
+  {
+    label: 'Privat övningskörning',
+    title: 'Handledare & övningskörning',
+    text: 'Få en tydlig grund för privat övningskörning och vad som gäller.',
+    meta: 'För elev och handledare',
+    href: '/handledarkurs',
+  },
+  {
+    label: 'Riskutbildning del 1',
+    title: 'Riskettan',
+    text: 'Teoretisk utbildning om risker, beteenden och trafiksäkerhet.',
+    meta: 'Obligatorisk för B-körkort',
+    href: '/riskettan',
+  },
+  {
+    label: 'Riskutbildning del 2',
+    title: 'Risktvåan',
+    text: 'Praktisk utbildning där du upplever bilens gränser i svårare lägen.',
+    meta: 'Halkbana',
+    href: '/risktvaan',
+  },
 ];
 export function Pricing({ mode = 'all' }: { mode?: string }) {
   const lessonsOnly = mode === 'lessons';
@@ -173,6 +235,55 @@ export function TheoryPricesContent() {
     </section>
   );
 }
+function OverviewCards({
+  title,
+  text,
+  cards,
+}: {
+  title: string;
+  text: string;
+  cards: typeof priceOverviewCards;
+}) {
+  return (
+    <section className="container section overview-section">
+      <div className="section-heading">
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
+      <div className="overview-grid">
+        {cards.map((card) => (
+          <Link className="overview-card" href={card.href} key={card.href}>
+            <span>{card.label}</span>
+            <h3>{card.title}</h3>
+            <p>{card.text}</p>
+            <div>
+              <strong>{card.meta}</strong>
+              <ArrowUpRight size={22} aria-hidden="true" />
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+export function PricesOverviewContent() {
+  return (
+    <OverviewCards
+      title="Välj prisområde"
+      text="Gå vidare till den prislista som matchar din utbildning eller ditt nästa steg."
+      cards={priceOverviewCards}
+    />
+  );
+}
+export function CoursesOverviewContent() {
+  return (
+    <OverviewCards
+      title="Välj kurs"
+      text="Här hittar du våra viktigaste kurser och utbildningsmoment samlade på ett ställe."
+      cards={courseOverviewCards}
+    />
+  );
+}
 export function ContactContent() {
   const mapEmbed =
     'https://www.google.com/maps?cid=7373633510116988312&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en-US&source=embed&output=embed';
@@ -287,6 +398,10 @@ export function TermsContent() {
 }
 export function SpecialContent({ slug }: { slug: string }) {
   switch (slug) {
+    case 'priser':
+      return <PricesOverviewContent />;
+    case 'kurser':
+      return <CoursesOverviewContent />;
     case 'kurserpris':
       return <CoursePricesContent />;
     case 'paket':

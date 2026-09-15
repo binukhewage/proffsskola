@@ -298,6 +298,24 @@ export type Page = {
   facts?: [string, string][];
 };
 export const pages: Record<string, Page> = {
+  priser: {
+    title: 'Priser hos Proffs Trafikskola',
+    heading: 'Priser',
+    intro:
+      'En samlad överblick över körlektioner, paket, intensivkurs, kurser och teori.',
+    image: 'herodraw',
+    description:
+      'Samlad prisöversikt för Proffs Trafikskolas körlektioner, paket, intensivkurser, kurser och teori i Järfälla.',
+  },
+  kurser: {
+    title: 'Kurser hos Proffs Trafikskola',
+    heading: 'Kurser',
+    intro:
+      'Hitta rätt riskutbildning eller stöd för privat övningskörning hos Proffs Trafikskola.',
+    image: 'kurser',
+    description:
+      'Översikt över Proffs Trafikskolas kurser, inklusive handledarstöd, Riskettan och Risktvåan.',
+  },
   paket: {
     title: 'Körkortspaket i Järfälla',
     heading: 'Paket Pris',

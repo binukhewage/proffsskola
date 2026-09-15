@@ -513,8 +513,19 @@ p + a {
 .school-hero-actions .button { min-height: 54px; background: #f3c923; color: #161916; border-radius: 5px; padding: 14px 25px; letter-spacing: 0; box-shadow: none; }
 .school-hero-prices { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 650; text-underline-offset: 5px; }
 .school-hero-prices:hover { text-decoration: underline; }
-.school-hero-phone { display: inline-flex; align-items: center; gap: 11px; margin-top: 28px; color: #535b53; font-size: 11px; line-height: 1.5; }
-.school-hero-phone strong { display: block; color: #202820; font-size: 14px; font-weight: 600; }
+.school-hero-phone {
+  display: inline-grid;
+  grid-template-columns: 21px auto;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 11px 0 11px 15px;
+  border-left: 3px solid #f3c923;
+  color: #535b53;
+  font-size: 11px;
+  line-height: 1.45;
+}
+.school-hero-phone strong { display: block; color: #202820; font-size: 16px; font-weight: 650; }
 .school-hero-phone:hover strong { text-decoration: underline; }
 @keyframes schoolHeroCopyIn {
   to {
@@ -562,7 +573,7 @@ p + a {
   }
   .school-hero-copy {
     display: grid;
-    grid-template-rows: auto auto auto 1fr auto auto;
+    grid-template-rows: auto auto auto 1fr auto;
     width: 100%;
     min-height: 0;
     max-width: none;
@@ -662,28 +673,30 @@ p + a {
     white-space: nowrap;
   }
   .school-hero-phone {
-    grid-row: 6;
+    grid-row: 3;
     align-self: start;
     justify-content: center;
     width: fit-content;
-    margin: 10px auto 0;
-    padding: 8px 16px 9px 13px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, .42);
-    background: rgba(247, 246, 242, .82);
+    margin: 13px auto 0;
+    padding: 6px 12px 6px 10px;
+    border: 0;
+    border-left: 2px solid #f3c923;
+    background: rgba(247, 246, 242, .48);
     color: #43483f;
-    backdrop-filter: blur(16px);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, .6),
-      0 14px 30px rgba(20, 20, 20, .16);
-    animation-delay: 4.28s;
+    backdrop-filter: none;
+    box-shadow: none;
+    font-size: 10px;
+    gap: 9px;
+    animation-delay: 3.78s;
   }
   .school-hero-phone svg {
     color: #202820;
+    width: 17px;
+    height: 17px;
   }
   .school-hero-phone strong {
     color: #151814;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: .01em;
   }
 }
@@ -1929,6 +1942,73 @@ address {
   font-weight: 500;
   letter-spacing: -0.035em;
 }
+.overview-section {
+  padding-top: 72px;
+}
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.overview-card {
+  position: relative;
+  min-height: 265px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.overview-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(16, 16, 16, 0.2);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.07);
+}
+.overview-card::before {
+  content: '';
+  width: 46px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--yellow);
+  margin-bottom: 28px;
+}
+.overview-card > span {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.overview-card h3 {
+  margin-top: 13px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+.overview-card p {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.overview-card div {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 26px;
+}
+.overview-card strong {
+  font-size: 14px;
+  font-weight: 650;
+}
+.overview-card svg {
+  flex: none;
+}
 .riskettan-intro-section,
 .handledar-intro-section {
   padding-block: 50px;
@@ -2941,6 +3021,16 @@ address {
   .pricing-section-prices-only .price-list {
     grid-template-columns: 1fr;
   }
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .overview-card {
+    min-height: 0;
+    padding: 24px;
+  }
+  .overview-card::before {
+    margin-bottom: 22px;
+  }
   .menu-toggle {
     padding: 9px 2px 9px 8px;
   }
@@ -3550,6 +3640,14 @@ address {
   .pricing-section {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+  .overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .overview-card {
+    min-height: 245px;
+    padding: 26px;
   }
   .course-price-grid {
     grid-template-columns: 1fr;

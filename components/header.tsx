@@ -10,7 +10,7 @@ const navItems = [
   { label: 'Hem', href: '/' },
   {
     label: 'Priser',
-    href: '#',
+    href: '/priser',
     items: [
       { label: 'Intensivkurs', href: '/intensivkurs' },
       { label: 'Körlektioner', href: '/korlektioner' },
@@ -21,7 +21,7 @@ const navItems = [
   },
   {
     label: 'Kurser',
-    href: '#',
+    href: '/kurser',
     items: [
       { label: 'Handledare & övningskörning', href: '/handledarkurs' },
       { label: 'Riskettan', href: '/riskettan' },
