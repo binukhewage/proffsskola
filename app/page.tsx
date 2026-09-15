@@ -2,7 +2,6 @@ import {
   ArrowUpRight,
   SteeringWheel,
   BookOpen,
-  MapPin,
   Lightning,
   RoadHorizon,
   Phone,
@@ -31,15 +30,16 @@ export default function Home() {
       <section className="school-hero" aria-labelledby="school-hero-title">
         <video
           className="school-hero-video"
-          src="/carvid.mp4"
           autoPlay
           muted
           playsInline
           aria-hidden="true"
-        />
+        >
+          <source src="/mobile.mp4" media="(max-width: 767px)" type="video/mp4" />
+          <source src="/carvid.mp4" type="video/mp4" />
+        </video>
         <div className="container school-hero-content">
             <div className="school-hero-copy">
-              <span className="school-hero-kicker">Din lokala trafikskola i Järfälla</span>
               <h1 id="school-hero-title">
                 Välkommen till<br />
                 <span>Proffs</span><br />trafikskola.
@@ -55,23 +55,6 @@ export default function Home() {
               </a>
             </div>
         </div>
-        <div className="school-hero-trust">
-          <div className="container school-hero-facts" aria-label="Kort om Proffs Trafikskola">
-            <div>
-              <SteeringWheel size={24} />
-              <span><strong>Automat & manuell</strong>Körlektioner som utgår från dig</span>
-            </div>
-            <div>
-              <BookOpen size={24} />
-              <span><strong>Undervisning på flera språk</strong>Svenska, engelska & arabiska</span>
-            </div>
-            <a href="/kontakt">
-              <MapPin size={24} />
-              <span><strong>Nära dig i Järfälla</strong>{business.street}</span>
-              <ArrowUpRight size={18} />
-            </a>
-          </div>
-        </div>
       </section>
       <section className="home-offers" aria-labelledby="home-offers-title">
         <div className="container">
@@ -80,7 +63,6 @@ export default function Home() {
               <h2 id="home-offers-title">Våra erbjudanden</h2>
               <p>Här kan du se våra nya erbjudanden för dig som är intresserad att ta körkort.</p>
             </div>
-            <Button href={business.shop}>BOKA NU</Button>
           </div>
           <div className="home-offers-grid">
             {[
