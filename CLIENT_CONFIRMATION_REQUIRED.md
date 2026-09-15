@@ -1,0 +1,18 @@
+# Client confirmation required before launch
+
+Audited 14 September 2026. These are actual conflicts or gaps in the supplied content, not requests to invent new business facts.
+
+1. **Handledarutbildning after the rule change.** Transportstyrelsen removed the introduction-course requirement on 1 August 2026. Confirm whether Proffs still offers voluntary training, its curriculum, languages, duration and price. The original homepage promotes 299 kr (ordinary 399 kr); the dedicated price list says 399 kr. The new page preserves the topic and historical course information, makes the rule change explicit, and directs enquiries to the school rather than presenting the course as mandatory or currently bookable.
+2. **Course promotions and provider consistency.** Homepage last-modified metadata is 22 September 2025, newer than the price page (29 April 2025). Homepage Riskettan: 499 kr, ordinary 599 kr; price page: 599 kr. Halkbana: 2,200 kr consistently (homepage ordinary comparison 2,500 kr). No offer expiry is supplied. The existing booking provider also presents different course pricing in its crawl. Confirm current prices in both systems. The website uses the prominent homepage Riskettan price with an explicit confirmation note and no expiry/countdown/availability claim.
+3. **Refund fee and package validity.** Scraped /varavilkor (modified 13 March 2026) says 15% of the remaining balance; provider terms say 10%. Source also lists one-year lesson packages, six-month theory access, four-month discounted packages and a six-month refund window. Confirm how these interact, whether the discount deduction remains applicable, and harmonize the provider terms. Original terms are retained with a visible conflict notice.
+4. **Test-lesson duration.** Homepage says 50 minutes; /korlektioner and /priser specify 30-50 minutes. Website uses the dedicated pages' 30-50 minutes; confirm the intended duration.
+5. **Teaching languages.** The prominent homepage list says Swedish, English and Arabic. Longer copy additionally claims Spanish and Turkish (including supervisor training). Website uses the three consistently promoted languages and invites enquiries; confirm current staff availability for Spanish/Turkish and course-specific languages.
+6. **Saturday availability.** Homepage prose says open every day except Sunday, but the contact page, repeated footer and storefront photograph only give Mon-Thu 09:00-18:00 and Fri 09:00-16:00. Website publishes those explicit reception hours plus weekday driving hours 08:00-18:30. Confirm Saturday teaching/reception availability before adding it.
+7. **Intensive-course theory lessons.** Narrative says teacher-led theory is included; package cards explicitly list only online theory alongside driving and risk training. Website preserves exact package contents and asks customers to discuss teacher-led scheduling with the school. Confirm entitlement and any additional cost.
+8. **Current purchase catalogue.** Published lesson/package prices are faithfully migrated from the supplied pages, but some source pages date to 2024/2025. Confirm all amounts against Trafikskola Online before launch. No newer business pricing was silently substituted.
+
+## Official rule sources
+- https://www.transportstyrelsen.se/sv/om-oss/pressrum/nyhetsarkiv/2026/introduktionsutbildningen-tas-bort--det-har-behover-du-ha-koll-pa/
+- https://www.trafikverket.se/korkort/ta-korkort/personbil-och-latt-lastbil/
+
+The archived four-month theory-test validity is outdated for passes from 19 August 2026, which are valid one year. The new page gives the dated distinction and links to Trafikverket. This is a verified correction, not an unresolved business question.

@@ -1,0 +1,130 @@
+{
+  "date": "2026-09-14T06:44:18.648Z",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Trafikskola i Jakobsberg, Järfälla & Barkarby",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/priser",
+      "status": 200,
+      "title": "Priser på körlektioner, kurser och paket | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/paket",
+      "status": 200,
+      "title": "Körkortspaket i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/intensivkurs",
+      "status": 200,
+      "title": "Intensivkurs i Jakobsberg, Järfälla & Barkarby | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/korlektioner",
+      "status": 200,
+      "title": "Körlektioner med automat och manuell i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/kurser",
+      "status": 200,
+      "title": "Riskutbildningar och körkortskurser i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/riskettan",
+      "status": 200,
+      "title": "Riskettan i Jakobsberg och Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/risktvaan",
+      "status": 200,
+      "title": "Risktvåan och halkbana i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/handledarkurs",
+      "status": 200,
+      "title": "Handledarutbildning och privat övningskörning | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/teori",
+      "status": 200,
+      "title": "Körkortsteori online och taxiteori | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/taxiteori",
+      "status": 200,
+      "title": "Taxiteori i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/vagen-till-korkort",
+      "status": 200,
+      "title": "Vägen till B-körkort, steg för steg | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/om-oss",
+      "status": 200,
+      "title": "Om Proffs Trafikskola i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/kontakt",
+      "status": 200,
+      "title": "Kontakt och öppettider i Järfälla | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/boka",
+      "status": 200,
+      "title": "Boka kurser och köp körkortspaket | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    },
+    {
+      "path": "/villkor",
+      "status": 200,
+      "title": "Villkor och personuppgifter | Proffs Trafikskola",
+      "jsonLd": 2,
+      "accessibilityViolations": 0
+    }
+  ],
+  "viewports": [
+    375,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "internalLinks": 16,
+  "errors": [
+    "Navigation failed at 390",
+    "Navigation failed at 768",
+    "Dark: color-contrast"
+  ]
+}

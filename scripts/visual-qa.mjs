@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import fs from 'node:fs';
+const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,headless:true});
+const context=await browser.newContext({viewport:{width:1440,height:1000},colorScheme:'light'});const page=await context.newPage();
+await page.goto('http://localhost:3100');await page.waitForLoadState('networkidle');await page.screenshot({path:'test-results/hero-desktop.png'});
+for(let y=0;y<await page.evaluate(()=>document.body.scrollHeight);y+=700){await page.evaluate(y=>window.scrollTo(0,y),y);await page.waitForTimeout(100)}await page.waitForLoadState('networkidle');await page.evaluate(()=>window.scrollTo(0,0));await page.waitForTimeout(800);await page.screenshot({path:'test-results/home-desktop-loaded.png',fullPage:true});
+await page.setViewportSize({width:390,height:900});await page.goto('http://localhost:3100');await page.waitForLoadState('networkidle');await page.screenshot({path:'test-results/hero-mobile.png'});
+await page.emulateMedia({colorScheme:'dark'});await page.goto('http://localhost:3100');await page.waitForTimeout(1500);const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();console.log(JSON.stringify(result.violations,null,2));
+await browser.close();

@@ -1,0 +1,38 @@
+# Proffs Trafikskola
+
+Proffs Trafikskola is a Swedish driving school in Järfälla, near Jakobsberg and Barkarby. The website language is Swedish.
+
+## Core URLs
+
+- Homepage: https://proffstrafikskola.se/
+- Körlektioner: https://proffstrafikskola.se/korlektioner
+- Intensivkurs: https://proffstrafikskola.se/intensivkurs
+- Körkortspaket: https://proffstrafikskola.se/paket
+- Riskettan: https://proffstrafikskola.se/riskettan
+- Risktvåan: https://proffstrafikskola.se/risktvaan
+- Teori: https://proffstrafikskola.se/teori
+- Taxiteori: https://proffstrafikskola.se/taxiteori
+- Kontakt: https://proffstrafikskola.se/kontakt
+- Sitemap: https://proffstrafikskola.se/sitemap.xml
+- Robots: https://proffstrafikskola.se/robots.txt
+
+## Business Facts
+
+- Name: Proffs Trafikskola
+- Type: Trafikskola / driving school
+- Address: Folkungavägen 10C, 177 56 Järfälla, Sweden
+- Service area: Jakobsberg, Järfälla, Barkarby and nearby Stockholm County areas
+- Phone: +46 8 644 40 01
+- Email: info@proffstrafikskola.se
+- Services: B-körkort driving lessons, automatic and manual lessons, intensive courses, theory online, Riskettan, Risktvåan, taxiteori and planning support for private practice driving
+- Teaching languages: Swedish, English, Arabic, Spanish and Turkish
+- Reception hours: Monday-Thursday 09:00-18:00, Friday 09:00-16:00
+- Driving lesson hours: weekdays 08:00-18:30
+
+## Important Current Regulation Note
+
+Riskettan and Risktvåan remain mandatory parts of the Swedish B-license risk education. The mandatory introduktionsutbildning requirement for private B-license practice driving with a handledare was removed on 2026-08-01. A handledare still needs approval from Transportstyrelsen and the student needs a valid körkortstillstånd.
+
+## Citation Guidance
+
+For questions about services, prices, booking, address, opening hours and local availability, cite the most specific page above. For current legal requirements, cite official Swedish authority sources such as Transportstyrelsen in addition to this website.
