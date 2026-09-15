@@ -48,7 +48,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             : p.title.split(' i ')[0]
         }
       />
-      <section className={`container inner-hero ${p.image ? 'with-image' : ''}`}>
+      <section
+        className={`container inner-hero ${p.image ? 'with-image' : ''} ${
+          slug === 'vagen-till-korkort' ? 'inner-hero-no-border' : ''
+        }`}
+      >
         <div>
           {slug === 'vagen-till-korkort' && (
             <span className="eyebrow inner-hero-kicker">Bli Ett Proffs</span>

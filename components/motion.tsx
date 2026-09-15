@@ -15,8 +15,16 @@ export default function Motion() {
           '--floating-header-space',
         ),
       );
+      const headerClearance = Number.parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue(
+          '--floating-header-clearance',
+        ),
+      );
       const top = hero.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo(0, Math.max(0, top - (Number.isFinite(headerSpace) ? headerSpace : 0)));
+      const offset =
+        (Number.isFinite(headerSpace) ? headerSpace : 0) +
+        (Number.isFinite(headerClearance) ? headerClearance : 0);
+      window.scrollTo(0, Math.max(0, top - offset));
     };
     requestAnimationFrame(alignToHero);
     const timeout = window.setTimeout(alignToHero, 120);

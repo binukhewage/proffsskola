@@ -48,7 +48,7 @@ export function Logo() {
         alt="Proffs Trafikskola"
         width={252}
         height={84}
-        priority
+        loading="eager"
       />
     </Link>
   );
@@ -62,6 +62,31 @@ export default function Header() {
   useEffect(() => {
     setOpen(false);
     setOpenDropdown(null);
+    const alignToHero = () => {
+      const hero = document.querySelector<HTMLElement>('.inner-hero');
+      if (!hero) {
+        window.scrollTo(0, 0);
+        return;
+      }
+      const headerSpace = Number.parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue(
+          '--floating-header-space',
+        ),
+      );
+      const headerClearance = Number.parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue(
+          '--floating-header-clearance',
+        ),
+      );
+      const top = hero.getBoundingClientRect().top + window.scrollY;
+      const offset =
+        (Number.isFinite(headerSpace) ? headerSpace : 0) +
+        (Number.isFinite(headerClearance) ? headerClearance : 0);
+      window.scrollTo(0, Math.max(0, top - offset));
+    };
+    requestAnimationFrame(alignToHero);
+    const timeout = window.setTimeout(alignToHero, 120);
+    return () => window.clearTimeout(timeout);
   }, [path]);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -149,7 +174,7 @@ export default function Header() {
           )}
         </nav>
         <div className="header-actions">
-          <Link href="/boka" className="button button-small">
+          <Link href="/boka" className={`button button-small${path === '/' ? ' home-mobile-hidden' : ''}`}>
             Boka nu <ArrowUpRight size={18} />
           </Link>
           <button
