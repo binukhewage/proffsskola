@@ -113,7 +113,7 @@ export default function Home() {
               { title: 'Kurser', icon: RoadHorizon, items: ['Stöd vid privat övningskörning', 'Riskettan B', 'Risktvåan (Halkbana)'], href: '/kurserpris' },
               { title: 'Körlektioner', icon: SteeringWheel, items: ['Testlektion 50 min', '1 körlektion 50 min', '5 körlektioner', '10 körlektioner', '15 körlektioner', '20 körlektioner', '30 körlektioner'], href: '/korlektioner' },
               { title: 'Teori Online', icon: BookOpen, items: ['Körkortsteori bok', 'Teorifrågor på nätet', 'Teori Taxi skola – 3 500 kr'], href: '/teori' },
-              { title: 'Språk', icon: Translate, items: ['Arabiska', 'Svenska', 'Engelska'], href: null },
+              { title: 'Språk', icon: Translate, items: ['Svenska', 'Engelska', 'Arabiska', 'Spanska', 'Turkiska'], href: null },
             ].map(({ title, icon: Icon, items, href }) => (
               <div className="school-service" key={title}>
                 <Icon size={30} className="school-service-icon" aria-hidden="true" />
