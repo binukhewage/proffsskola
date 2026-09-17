@@ -554,9 +554,13 @@ p + a {
   .school-hero::before {
     display: block;
     opacity: 0;
-    background:
-      linear-gradient(180deg, rgba(247, 248, 243, .46) 0%, rgba(247, 248, 243, .32) 28%, rgba(247, 248, 243, 0) 51%),
-      linear-gradient(180deg, rgba(10, 13, 10, 0) 53%, rgba(10, 13, 10, .22) 77%, rgba(10, 13, 10, .4) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(10, 13, 10, 0) 0%,
+      rgba(10, 13, 10, 0) 54%,
+      rgba(10, 13, 10, .22) 78%,
+      rgba(10, 13, 10, .42) 100%
+    );
     animation: schoolHeroOverlayIn 1.2s ease 3.1s forwards;
   }
   .school-hero-video {
@@ -617,10 +621,10 @@ p + a {
   .school-hero-intro {
     max-width: 300px;
     margin: 11px auto 0;
-    color: #333b33;
+    color: #202820;
     font-size: 13px;
     line-height: 1.44;
-    text-shadow: 0 1px 14px rgba(255, 255, 255, .74);
+    text-shadow: 0 1px 10px rgba(255, 255, 255, .55);
     animation-delay: 3.62s;
   }
   .school-hero-actions,
@@ -2061,6 +2065,21 @@ address {
 .overview-card svg {
   flex: none;
 }
+.static-redirect {
+  min-height: 55dvh;
+}
+.static-redirect h1 {
+  font-size: clamp(38px, 6vw, 72px);
+}
+.static-redirect p {
+  margin-top: 20px;
+  color: var(--muted);
+}
+.static-redirect a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 .riskettan-intro-section,
 .handledar-intro-section {
   padding-block: 50px;
@@ -2830,7 +2849,28 @@ address {
     display: none;
   }
   .menu-toggle {
+    display: inline-flex;
+    position: relative;
+    z-index: 3;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 46px;
+    padding: 0;
+    border: 1px solid rgba(16, 16, 16, 0.16);
+    border-radius: 12px;
+    background: #f3c923;
+    color: #101010;
+    box-shadow: 0 8px 18px rgba(16, 16, 16, 0.12);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .menu-toggle svg {
     display: block;
+    width: 25px;
+    height: 25px;
+    color: currentColor;
+    stroke: currentColor;
   }
   .header-inner {
     height: 70px;
@@ -3083,6 +3123,7 @@ address {
   }
   .header-actions {
     gap: 7px;
+    flex-shrink: 0;
   }
   .button-small {
     padding: 12px 13px;
@@ -3107,7 +3148,9 @@ address {
     margin-bottom: 22px;
   }
   .menu-toggle {
-    padding: 9px 2px 9px 8px;
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
   }
   .hero-inner {
     padding-top: 34px;

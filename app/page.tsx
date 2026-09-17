@@ -16,6 +16,7 @@ import {
   Location,
   BookingCTA,
 } from '@/components/ui';
+import SchoolHeroVideo from '@/components/school-hero-video';
 import Schema from '@/components/schema';
 import { metadata, faqSchema } from '@/lib/seo';
 import { business } from '@/lib/data';
@@ -28,16 +29,7 @@ export default function Home() {
   return (
     <>
       <section className="school-hero" aria-labelledby="school-hero-title">
-        <video
-          className="school-hero-video"
-          autoPlay
-          muted
-          playsInline
-          aria-hidden="true"
-        >
-          <source src="/mobile.mp4" media="(max-width: 767px)" type="video/mp4" />
-          <source src="/carvid.mp4" type="video/mp4" />
-        </video>
+        <SchoolHeroVideo />
         <div className="container school-hero-content">
             <div className="school-hero-copy">
               <h1 id="school-hero-title">
