@@ -126,6 +126,7 @@ p + a {
   border-radius: var(--radius);
   padding: 22px;
   background: var(--surface);
+  overflow-wrap: anywhere;
 }
 .facts-grid dt {
   font-size: 12px;
@@ -2036,6 +2037,7 @@ address {
 }
 .overview-card {
   position: relative;
+  min-width: 0;
   min-height: 265px;
   display: flex;
   flex-direction: column;
@@ -2066,17 +2068,20 @@ address {
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  overflow-wrap: anywhere;
 }
 .overview-card h3 {
   margin-top: 13px;
   font-size: 24px;
   letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
 }
 .overview-card p {
   margin-top: 15px;
   font-size: 14px;
   line-height: 1.65;
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 .overview-card div {
   display: flex;
@@ -3935,60 +3940,22 @@ address {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .overview-grid,
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+  .overview-card {
+    min-height: 0;
+    padding: 24px;
+  }
+  .overview-card h3 {
+    font-size: 23px;
+  }
+}
 @media (max-width: 380px) {
   .hero .button-group,
   .inner-hero .button-group {
     grid-template-columns: 1fr;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #151615;
-    --surface: #1e201e;
-    --tint: #20221f;
-    --ink: #f5f5ef;
-    --muted: #b5b7af;
-    --line: #3b3d36;
-    color-scheme: dark;
-  }
-  .site-header {
-    background: rgba(247, 246, 242, 0.96);
-    border-bottom-color: #d9d9d0;
-    color: #101010;
-  }
-  .hero {
-    background-color: #faf9f6;
-    border-bottom-color: #d9d9d0;
-  }
-  .hero h1,
-  .hero-trust,
-  .hero-trust svg {
-    color: #111;
-  }
-  .hero p,
-  .hero .eyebrow {
-    color: #555;
-  }
-  .hero h1 span:after {
-    height: 25%;
-    bottom: 7px;
-  }
-  .hero-trust span {
-    border-right-color: rgba(16, 16, 16, 0.15);
-  }
-  .hero h1 span:after {
-    background: var(--yellow);
-  }
-  .button-secondary {
-    color: var(--ink);
-  }
-  .button-secondary:hover {
-    background: #2b2e28;
-  }
-  .button-secondary:focus-visible {
-    outline-color: var(--yellow);
-  }
-  .photo img {
-    filter: brightness(0.93);
   }
 }
