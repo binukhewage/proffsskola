@@ -591,23 +591,23 @@ p + a {
     content: '';
     position: absolute;
     z-index: 0;
-    top: -76px;
+    top: -58px;
     left: 50%;
-    width: min(138%, 560px);
-    height: 470px;
+    width: min(130%, 520px);
+    height: 350px;
     transform: translateX(-50%);
     pointer-events: none;
     background: radial-gradient(
-      ellipse at 50% 38%,
+      ellipse at 50% 42%,
       rgba(247, 248, 243, .92) 0%,
-      rgba(247, 248, 243, .76) 28%,
-      rgba(247, 248, 243, .48) 48%,
-      rgba(247, 248, 243, .2) 67%,
-      rgba(247, 248, 243, 0) 86%
+      rgba(247, 248, 243, .74) 28%,
+      rgba(247, 248, 243, .42) 48%,
+      rgba(247, 248, 243, .14) 64%,
+      rgba(247, 248, 243, 0) 78%
     );
-    filter: blur(18px);
-    -webkit-mask-image: radial-gradient(ellipse at 50% 38%, #000 0%, #000 52%, transparent 88%);
-    mask-image: radial-gradient(ellipse at 50% 38%, #000 0%, #000 52%, transparent 88%);
+    filter: blur(16px);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 42%, #000 0%, #000 50%, transparent 78%);
+    mask-image: radial-gradient(ellipse at 50% 42%, #000 0%, #000 50%, transparent 78%);
   }
   .school-hero-kicker,
   .school-hero h1,
