@@ -40,7 +40,7 @@ export const authority = {
 export const navigation = [
   ['Körlektioner', '/korlektioner'],
   ['Intensivkurs', '/intensivkurs'],
-  ['Paket Pris', '/paket'],
+  ['Paket pris', '/paket'],
   ['Kontakt', '/kontakt'],
 ];
 export type Price = { name: string; price: number; detail: string };
@@ -186,7 +186,7 @@ export const illustrations = {
   },
   'vagen-till-korkort': {
     src: '/images/vagen-till-korkort.png',
-    alt: 'Illustration: Bli Ett Proffs – Vägen Till Körkort steg för steg',
+    alt: 'Illustration: Bli Ett Proffs – Vägen till körkort steg för steg',
     width: 1774,
     height: 887,
   },
@@ -272,18 +272,18 @@ export const steps = [
   },
   {
     name: 'Steg 3: Körutbildning',
-    text: 'Vi har erfarna lärare och bilar som är redo att möta dina behov som elev. Vi hjälper dig genom att skapa en personlig plan för dina lektioner och erbjuder professionell vägledning. Våra bilar och utbildade instruktörer är här för att ge dig det stöd du behöver och förbereda dig grundligt inför förarprovet.',
+    text: 'Vi har erfarna lärare och bilar som är redo att möta dina behov som elev. Vi hjälper dig genom att skapa en personlig plan för dina lektioner och erbjuder professionell vägledning. Våra bilar och utbildade instruktörer är här för att ge dig det stöd du behöver och förbereda dig grundligt inför körprovet.',
   },
   {
     name: 'Steg 4: Riskutbildning',
-    text: 'Riskettan är obligatorisk och måste genomföras på en trafikskola som är godkänd av Transportstyrelsen. Vi är godkända och erbjuder Riskutbildning del 1.\n\nDel två av riskutbildningen, ofta kallad halkbanan, är också obligatorisk. Det är en praktisk utbildning där du får öva på att köra på halt underlag och uppleva svåra trafikssituationer på ett säkert sätt.',
+    text: 'Riskettan är obligatorisk och måste genomföras på en trafikskola som är godkänd av Transportstyrelsen. Vi är godkända och erbjuder Riskutbildning del 1.\n\nDel två av riskutbildningen, ofta kallad halkbanan, är också obligatorisk. Det är en praktisk utbildning där du får öva på att köra på halt underlag och uppleva svåra trafiksituationer på ett säkert sätt.',
   },
   {
     name: 'Steg 5: Teoriprov',
     text: 'För att gå vidare till körprovet måste du först klara av teoriprovet. Du behöver få minst 52 poäng för att bli godkänd. Provet innehåller frågor inom olika kategorier som trafikregler, miljö och fordonssäkerhet. Se till att förbereda dig noggrant för att öka dina chanser att lyckas.',
   },
   {
-    name: 'Steg 6: Förarprov',
+    name: 'Steg 6: Körprov',
     text: 'Nu är det dags att sätta all din kunskap på prov. Körprovet är den praktiska delen av din körutbildning. Det är viktigt att boka körprovet i god tid, eftersom du har endast 4 månader på dig att göra provet efter att du slutfört den teoretiska delen. Bokningen görs via Trafikverket.se/korkort. Vi hjälper gärna till med bokningen på plats.\n\nLycka till!',
   },
 ];
@@ -292,6 +292,7 @@ export type Page = {
   heading: string;
   intro: string;
   image?: string;
+  factsTitle?: string;
   sections?: { title: string; body: string }[];
   description?: string;
   faqs?: { q: string; a: string }[];
@@ -318,7 +319,7 @@ export const pages: Record<string, Page> = {
   },
   paket: {
     title: 'Körkortspaket i Järfälla',
-    heading: 'Paket Pris',
+    heading: 'Paket pris',
     intro: 'Välj ett paket som passar din nivå och fortsätt mot körkortet med tydliga priser.',
     image: 'paket',
     description:
@@ -330,8 +331,8 @@ export const pages: Record<string, Page> = {
     ],
   },
   kurserpris: {
-    title: 'Kurser Pris hos Proffs Trafikskola',
-    heading: 'Kurser Pris',
+    title: 'Kurser pris hos Proffs Trafikskola',
+    heading: 'Kurser pris',
     intro: 'Aktuella priser för Riskettan, Risktvåan och andra kurser hos Proffs Trafikskola.',
     image: 'kurser',
     description:
@@ -339,6 +340,7 @@ export const pages: Record<string, Page> = {
   },
   intensivkurs: {
     title: 'Intensivkurs i Jakobsberg, Järfälla & Barkarby',
+    factsTitle: 'intensivkurs i Jakobsberg, Järfälla & Barkarby',
     heading: 'Boka intensivkurs i Jakobsberg, Järfälla & Barkarby',
     intro: 'Vill du ta körkortet snabbt planerar vi en intensivkurs efter din nivå, dina förkunskaper och din tillgängliga tid.',
     image: 'intensivkurs',
@@ -367,11 +369,11 @@ export const pages: Record<string, Page> = {
     sections: [
       {
         title: 'En effektiv intensivkurs i Jakobsberg, Järfälla och Barkarby',
-        body: 'Vi på Proffs Trafikskola specialanpassar intensivkursen utifrån din kunskap och erfarenhet men målet på slutet av kursen förblir densamma, att du ska lyckas ta körkort vid kursens slut.\n\nIntensivkursen innehåller körlektioner, teorilektioner, Riskettan, Risktvåan och digital teori.\n\nVi erbjuder vår intensivutbildning på ett flertal språk, bland annat svenska, engelska, arabiska, turkiska och spanska.\n\nAlla är välkomna att gå våra intensivkurser oavsett förkunskaper, se bara till att ha ett giltigt körkortstillstånd från Trafikverket och tillräckligt med tid att kunna fokusera på kursen.\n\nKontakta oss redan idag för att boka in en testlektion i steg mot ditt körkort.',
+        body: 'Vi på Proffs Trafikskola specialanpassar intensivkursen utifrån din kunskap och erfarenhet men målet i slutet av kursen förblir detsamma, att du ska lyckas ta körkort vid kursens slut.\n\nIntensivkursen innehåller körlektioner, teorilektioner, Riskettan, Risktvåan och digital teori.\n\nVi erbjuder vår intensivutbildning på ett flertal språk, bland annat svenska, engelska, arabiska, turkiska och spanska.\n\nAlla är välkomna att gå våra intensivkurser oavsett förkunskaper, se bara till att ha ett giltigt körkortstillstånd från Trafikverket och tillräckligt med tid att kunna fokusera på kursen.\n\nKontakta oss redan idag för att boka in en testlektion i steg mot ditt körkort.',
       },
       {
         title: 'Intensivkurs för dig som vill ta körkort snabbt',
-        body: 'Våra erfarna pedagoger har lång erfarenhet av att utbilda elever till skickliga och säkra förare som klarar körprovet och teoriprovet inom den angivna tidsramen för kursen. Vi är experter på att motivera våra elever och hålla lektioner som effektivt överför körkunskap.\n\nVår intensivkurs är noggrant planerad med hänsyn till dina individuella förkunskaper. Detta innebär att dina lektioner är skräddarsydda för att fokusera på de områden du behöver förbättra för att framgångsrikt klara din uppkörning.\n\nEftersom det är mycket körlektioner under en kort tid minns våra elever det de lär sig under intensivkursen vilket gjort att det varit ett effektivt sätt för dem att ta körkort.',
+        body: 'Våra erfarna pedagoger har lång erfarenhet av att utbilda elever till skickliga och säkra förare som klarar körprovet och teoriprovet inom den angivna tidsramen för kursen. Vi är experter på att motivera våra elever och hålla lektioner som effektivt överför körkunskap.\n\nVår intensivkurs är noggrant planerad med hänsyn till dina individuella förkunskaper. Detta innebär att dina lektioner är skräddarsydda för att fokusera på de områden du behöver förbättra för att framgångsrikt klara körprovet.\n\nEftersom det är mycket körlektioner under en kort tid minns våra elever det de lär sig under intensivkursen vilket gjort att det varit ett effektivt sätt för dem att ta körkort.',
       },
       {
         title: 'Varför välja vår intensivutbildning?',
@@ -379,12 +381,13 @@ export const pages: Record<string, Page> = {
       },
       {
         title: 'Vi lär dig bli en säker förare i trafiken',
-        body: 'För att starta en intensivkurs hos oss bokar vi först in dig för en testlektion där vi ser hur mycket förkunskap du har. En intensivkurs för en person som aldrig suttit bakom ratten kommer se annorlunda ut än för den som övningskört i flera år. Men oavsett vart på skalan du faller ordnar vi så att du kommer ha möjlighet att ta körkort efter kursens slut.\n\nVåra pedagoger hjälper dig med teorin och övningskörningen för att du ska känna dig trygg och säker inför teoriprovet och uppkörningen.\n\nVi har genom åren hjälpt många elever att bli duktiga förare och vi ser fram emot att hjälpa dig att ta körkort!',
+        body: 'För att starta en intensivkurs hos oss bokar vi först in dig för en testlektion där vi ser hur mycket förkunskap du har. En intensivkurs för en person som aldrig suttit bakom ratten kommer se annorlunda ut än för den som övningskört i flera år. Men oavsett vart på skalan du faller ordnar vi så att du kommer ha möjlighet att ta körkort efter kursens slut.\n\nVåra pedagoger hjälper dig med teorin och övningskörningen för att du ska känna dig trygg och säker inför teoriprovet och körprovet.\n\nVi har genom åren hjälpt många elever att bli duktiga förare och vi ser fram emot att hjälpa dig att ta körkort!',
       },
     ],
   },
   korlektioner: {
     title: 'Körlektioner med automat och manuell i Järfälla',
+    factsTitle: 'körlektioner med automat och manuell bil i Järfälla',
     heading: 'Körlektioner',
     intro:
       'Lär dig köra med automat eller manuell bil. Personlig vägledning, 50 minuters körlektioner och en plan som passar din nivå.',
@@ -448,7 +451,8 @@ export const pages: Record<string, Page> = {
   },
   risktvaan: {
     title: 'Risktvåan halkbana i Järfälla',
-    heading: 'RISKTVÅAN',
+    factsTitle: 'Risktvåan halkbana i Järfälla',
+    heading: 'Risktvåan',
     intro: 'Praktisk riskutbildning som hjälper dig förstå bilens beteende i svårare körlägen.',
     image: 'risketvan',
     description:
@@ -482,6 +486,7 @@ export const pages: Record<string, Page> = {
   },
   handledarkurs: {
     title: 'Handledare och privat övningskörning i Järfälla',
+    factsTitle: 'handledare och privat övningskörning i Järfälla',
     heading: 'Handledare och\nprivat övningskörning',
     intro: 'Från 1 augusti 2026 krävs inte längre introduktionsutbildning för privat övningskörning med personbil, men handledare och elev måste fortfarande uppfylla Transportstyrelsens krav.',
     image: 'handledarutbildning',
@@ -561,7 +566,7 @@ export const pages: Record<string, Page> = {
   },
   'vagen-till-korkort': {
     title: 'Vägen till B-körkort, steg för steg',
-    heading: 'Vägen Till Körkort',
+    heading: 'Vägen till körkort',
     intro:
       'Körkortstillstånd, teori, körning och prov. Vi hjälper dig att få överblick och planera vägen framåt.',
     image: 'vagen-till-korkort',

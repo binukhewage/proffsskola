@@ -14,8 +14,8 @@ const navItems = [
     items: [
       { label: 'Intensivkurs', href: '/intensivkurs' },
       { label: 'Körlektioner', href: '/korlektioner' },
-      { label: 'Paket Pris', href: '/paket' },
-      { label: 'Kurser Pris', href: '/kurserpris' },
+      { label: 'Paket pris', href: '/paket' },
+      { label: 'Kurser pris', href: '/kurserpris' },
       { label: 'Teori', href: '/teori' },
     ],
   },
@@ -28,15 +28,15 @@ const navItems = [
       { label: 'Risktvåan', href: '/risktvaan' },
     ],
   },
-  { label: 'Våra Villkor', href: '/villkor' },
-  { label: 'Vägen Till Körkort', href: '/vagen-till-korkort' },
+  { label: 'Våra villkor', href: '/villkor' },
+  { label: 'Vägen till körkort', href: '/vagen-till-korkort' },
   { label: 'Kontakt', href: '/kontakt' },
   {
-    label: 'E-Handel',
+    label: 'E-handel',
     href: '#',
     items: [
-      { label: 'Boka Kurs', href: business.booking },
-      { label: 'Paket & Lektioner', href: business.shop },
+      { label: 'Boka kurs', href: business.booking },
+      { label: 'Paket & lektioner', href: business.shop },
     ],
   },
 ];

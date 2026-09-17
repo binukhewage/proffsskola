@@ -42,16 +42,16 @@ export default function Home() {
             <div className="school-hero-copy">
               <h1 id="school-hero-title">
                 Välkommen till<br />
-                <span>Proffs</span><br />trafikskola.
+                <span>Proffs</span><br />Trafikskola.
               </h1>
-              <p className="school-hero-intro">En pålitlig körskola med bra priser.<br />I Jakobsberg, Järfälla & Barkarby.</p>
+              <p className="school-hero-intro">En pålitlig trafikskola med bra priser.<br />I Jakobsberg, Järfälla & Barkarby.</p>
               <a className="school-hero-phone" href={`tel:${business.tel}`}>
                 <Phone size={21} />
                 <span>Prata med oss<strong>{business.phone}</strong></span>
               </a>
               <div className="school-hero-actions">
                 <Button href={business.shop}>Boka nu</Button>
-                <Link href="/priser" className="school-hero-prices">Pricer <ArrowUpRight size={19} /></Link>
+                <Link href="/priser" className="school-hero-prices">Priser <ArrowUpRight size={19} /></Link>
               </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ export default function Home() {
             {[
               { title: 'Kurser', icon: RoadHorizon, items: ['Stöd vid privat övningskörning', 'Riskettan B', 'Risktvåan (Halkbana)'], href: '/kurserpris' },
               { title: 'Körlektioner', icon: SteeringWheel, items: ['Testlektion 50 min', '1 körlektion 50 min', '5 körlektioner', '10 körlektioner', '15 körlektioner', '20 körlektioner', '30 körlektioner'], href: '/korlektioner' },
-              { title: 'Teori Online', icon: BookOpen, items: ['Körkortsteori bok', 'Teorifrågor på nätet', 'Teori Taxi skola – 3 500 kr'], href: '/teori' },
+              { title: 'Teori Online', icon: BookOpen, items: ['Körkortsteori bok', 'Teorifrågor på nätet', 'Taxiteori – 3 500 kr'], href: '/teori' },
               { title: 'Språk', icon: Translate, items: ['Svenska', 'Engelska', 'Arabiska', 'Spanska', 'Turkiska'], href: null },
             ].map(({ title, icon: Icon, items, href }) => (
               <div className="school-service" key={title}>
@@ -148,14 +148,14 @@ export default function Home() {
               {
                 lessons: '10 körlektioner',
                 title: 'Intensiv kurs 10 körlektioner',
-                price: '9.999 Kr',
+                price: '9 999 kr',
                 pace: 'På en vecka',
                 href: 'https://www.trafikskolaonline.se/sv/skola/proffs/ehandel/11261/',
               },
               {
                 lessons: '20 körlektioner',
                 title: 'Intensiv kurs 20 körlektioner',
-                price: '15.999 Kr',
+                price: '15 999 kr',
                 pace: 'På två veckor',
                 href: 'https://www.trafikskolaonline.se/sv/skola/proffs/ehandel/11262/',
                 featured: true,
@@ -163,7 +163,7 @@ export default function Home() {
               {
                 lessons: '30 körlektioner',
                 title: 'Intensiv kurs 30 körlektioner',
-                price: '21.999 Kr',
+                price: '21 999 kr',
                 pace: 'På en månad',
                 href: 'https://www.trafikskolaonline.se/sv/skola/proffs/ehandel/11263/',
               },
@@ -192,7 +192,7 @@ export default function Home() {
         <div className="container school-intro-grid">
           <article className="school-intro-lead">
             <h2 id="school-intro-title">Proffs Trafikskola i Jakobsberg, Järfälla & Barkarby</h2>
-            <p>Välkommen till Proffs Trafikskola, belägen i Järfälla mellan Jakobsberg och Barkarby. Vi erbjuder ett brett utbud av körutbildningar, från enstaka körlektioner till intensivkurser och uppkörning.</p>
+            <p>Välkommen till Proffs Trafikskola, belägen i Järfälla mellan Jakobsberg och Barkarby. Vi erbjuder ett brett utbud av körutbildningar, från enstaka körlektioner till intensivkurser och körprov.</p>
             <p>Våra erfarna lärare har hjälpt många elever att köra bil, och vi tror att alla har potential att lyckas ta körkort med rätt pedagogiskt stöd. Vårt mål är att vara just det stödet, och att guida våra elever hela vägen till deras körkort.</p>
             <p>Vi erbjuder undervisning på svenska, engelska, spanska, arabiska och turkiska, samt tillhandahåller teoriböcker på flera språk. Detta ökar tillgängligheten och underlättar för alla som vill ta körkort hos oss.</p>
           </article>
@@ -201,14 +201,14 @@ export default function Home() {
           </div>
           <article className="school-intro-card">
             <span>Hela vägen till körkortet</span>
-            <h3>Vår körskola hjälper dig att ta körkort</h3>
-            <p>Oavsett hur du vill ta ditt körkort hjälper vi dig hela vägen dit. Hos oss kan du gå Riskettan, Risktvåan, taxiteori, intensivkurs, teorilektioner och körlektioner, samt få vägledning inför privat övningskörning, teoriprov och uppkörning. Vi erbjuder det praktiska stöd du behöver för att kunna ta ditt körkort.</p>
+            <h3>Vår trafikskola hjälper dig att ta körkort</h3>
+            <p>Oavsett hur du vill ta ditt körkort hjälper vi dig hela vägen dit. Hos oss kan du gå Riskettan, Risktvåan, taxiteori, intensivkurs, teorilektioner och körlektioner, samt få vägledning inför privat övningskörning, teoriprov och körprov. Vi erbjuder det praktiska stöd du behöver för att kunna ta ditt körkort.</p>
             <p>Våra trafiklärare brinner för trafikutbildning och vårt mål är inte bara att du ska ta körkort, utan även att du ska bli en säker och skicklig förare. Vi utvecklas ständigt genom att utbilda nya elever och förbättra våra kurser för att kunna erbjuda dig den bästa undervisningen för personbil.</p>
             <p>Vi erbjuder även flexibla tider och har öppet alla dagar i veckan utom söndagar.</p>
           </article>
           <article className="school-intro-card school-intro-card-muted">
             <span>Trygg utbildning</span>
-            <h3>En trygg och säker körskola i Jakobsberg, Järfälla och Barkarby</h3>
+            <h3>En trygg och säker trafikskola i Jakobsberg, Järfälla och Barkarby</h3>
             <p>Utöver att hjälpa våra elever att snabbt ta körkort, är vi noga med att den snabba vägen inte ska vara en genväg utan en effektiv och säker väg till körkortet.</p>
             <p>Vi lägger minst lika stor vikt vid att våra elever ska ha rätt kunskap och vara försiktiga i trafiken när de väl kör iväg efter att ha fått sitt körkort.</p>
             <p>Vårt mål är att skapa skickliga förare som är uppmärksamma i trafiken och kör smidigt. Hos oss utbildas förare som sköter sig ute på vägarna, för allas säkerhet och välbefinnande.</p>
@@ -230,16 +230,16 @@ export default function Home() {
               <h2 id="course-depth-title">Våra kurser</h2>
               <p>Hos oss får du lära dig att köra bil med B-behörighet och ta körkort för personbilar och lätta lastbilar.</p>
               <ul>
-                <li>Vi erbjuder körlektioner, teorilektioner, Riskettan, Risktvåan och uppkörning. Vår erfarna personal anpassar kurserna efter dina behov och önskemål, så att vägen till körkortet blir så lugn och lärorik som möjligt.</li>
-                <li>Vår <Link href="/intensivkurs">intensivutbildning</Link> är skräddarsydd efter dina förkunskaper, för att ge dig bästa möjliga chans att klara uppkörningen.</li>
+                <li>Vi erbjuder körlektioner, teorilektioner, Riskettan, Risktvåan och stöd inför körprov. Vår erfarna personal anpassar kurserna efter dina behov och önskemål, så att vägen till körkortet blir så lugn och lärorik som möjligt.</li>
+                <li>Vår <Link href="/intensivkurs">intensivutbildning</Link> är skräddarsydd efter dina förkunskaper, för att ge dig bästa möjliga chans att klara körprovet.</li>
                 <li>Vi erbjuder även <Link href="/handledarkurs">aktuell vägledning för handledare och privat övningskörning</Link> efter att kravet på introduktionsutbildning slopades den 1 augusti 2026.</li>
               </ul>
               <p>Kontakta oss för att boka en testkörning och ta ditt första steg mot att ta körkort.</p>
             </article>
             <div className="course-depth-two">
               <article>
-                <h3>Taxi teori</h3>
-                <p>Vi erbjuder taxi teoriutbildning för att hjälpa dig klara teoriprovet och få din taxiförarlegitimation. Under kursen lär du dig att använda olika hjälpmedel för att öka din effektivitet och förbättra ditt kundbemötande.</p>
+                <h3>Taxiteori</h3>
+                <p>Vi erbjuder taxiteoriutbildning för att hjälpa dig klara teoriprovet och få din taxiförarlegitimation. Under kursen lär du dig att använda olika hjälpmedel för att öka din effektivitet och förbättra ditt kundbemötande.</p>
                 <p>Du får även kunskap om hur du kan bistå personer med funktionsvariationer och sjukdomar, förstå risker i yrket, olika fordon, miljöpåverkan, ekonomi, trafikregler och vägmärken.</p>
               </article>
               <article>

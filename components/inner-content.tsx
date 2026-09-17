@@ -28,16 +28,16 @@ const coursePriceCards = [
   { name: 'Risk 2 (Halkbana)', price: '2200kr' },
 ];
 const theoryPriceCards = [
-  { name: 'Teori online Bara sv/eng', price: '599kr' },
+  { name: 'Teori online – svenska/engelska', price: '599kr' },
   { name: 'Teori online andra språk', price: '749kr' },
-  { name: 'Teori Taxi', price: '3500kr' },
+  { name: 'Taxiteori', price: '3500kr' },
 ];
 const priceOverviewCards = [
   {
     label: 'Snabb utbildning',
     title: 'Intensivkurs',
     text: 'Paket med körlektioner, Risk 1, Risk 2 och teori online.',
-    meta: 'Från 9.999kr',
+    meta: 'Från 9 999 kr',
     href: '/intensivkurs',
   },
   {
@@ -49,14 +49,14 @@ const priceOverviewCards = [
   },
   {
     label: 'Paket',
-    title: 'Paket Pris',
+    title: 'Paket pris',
     text: 'Samla körlektioner, Riskettan och teori online i ett paket.',
-    meta: 'Från 4.699kr',
+    meta: 'Från 4 699 kr',
     href: '/paket',
   },
   {
     label: 'Riskutbildning',
-    title: 'Kurser Pris',
+    title: 'Kurser pris',
     text: 'Aktuella priser för Riskettan, Risktvåan och handledarstöd.',
     meta: 'Från 599kr',
     href: '/kurserpris',

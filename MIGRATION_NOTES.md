@@ -25,7 +25,7 @@ Audit date: 14 September 2026. Input archive: `proffstrafikskola.se 2.zip`. Arch
 | /teori/ | Teori - Proffs Trafikskola | 2024-09-16T09:30:03+00:00 |
 | /korlektioner/ | Körlektioner - Proffs Trafikskola | 2025-04-15T09:47:49+00:00 |
 | /1307-2/ | - Proffs Trafikskola | 2024-09-18T15:35:43+00:00 |
-| /e-handel/ | E-Handel - Proffs Trafikskola | 2025-05-17T16:34:20+00:00 |
+| /e-handel/ | E-handel - Proffs Trafikskola | 2025-05-17T16:34:20+00:00 |
 
 ## Architecture and preservation
 

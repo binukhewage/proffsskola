@@ -103,7 +103,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <section className="container section facts-section" aria-labelledby={`${slug}-facts-title`}>
           <div className="section-heading">
             <span className="eyebrow">Snabba fakta</span>
-            <h2 id={`${slug}-facts-title`}>Det viktigaste om {p.title.toLowerCase()}</h2>
+            <h2 id={`${slug}-facts-title`}>Det viktigaste om {p.factsTitle ?? p.title}</h2>
           </div>
           <dl className="facts-grid">
             {p.facts.map(([term, value]) => (
@@ -179,9 +179,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 <GraduationCap size={26} weight="regular" />
               </div>
               <span className="eyebrow">Mål &amp; innehåll</span>
-              <h2>Vad kan du förvänta dig inför utbildningen:</h2>
+              <h2>Vad innehåller utbildningen:</h2>
               <p>
-                Inför utbildningen kan du förvänta dig att lära dig om hur droganvändning,
+                Under utbildningen får du lära dig om hur droganvändning,
                 rattfylleri och trötthet påverkar körförmågan samt om riskerna med olovlig och farlig
                 körning. Du kommer att få insikt i hur du undviker dessa faror, de konsekvenser de
                 medför, och vilka riskgrupper som finns. Utbildningen täcker även hur
