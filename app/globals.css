@@ -576,6 +576,8 @@ p + a {
     text-align: center;
   }
   .school-hero-copy {
+    position: relative;
+    isolation: isolate;
     display: grid;
     grid-template-rows: auto auto auto 1fr auto;
     width: 100%;
@@ -585,9 +587,33 @@ p + a {
     transform: none;
     animation: none;
   }
+  .school-hero-copy::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -76px;
+    left: 50%;
+    width: min(138%, 560px);
+    height: 470px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at 50% 38%,
+      rgba(247, 248, 243, .92) 0%,
+      rgba(247, 248, 243, .76) 28%,
+      rgba(247, 248, 243, .48) 48%,
+      rgba(247, 248, 243, .2) 67%,
+      rgba(247, 248, 243, 0) 86%
+    );
+    filter: blur(18px);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 38%, #000 0%, #000 52%, transparent 88%);
+    mask-image: radial-gradient(ellipse at 50% 38%, #000 0%, #000 52%, transparent 88%);
+  }
   .school-hero-kicker,
   .school-hero h1,
   .school-hero-intro {
+    position: relative;
+    z-index: 1;
     opacity: 0;
     transform: translateY(14px);
     animation: schoolHeroCopyIn .85s ease 3.35s forwards;
@@ -629,6 +655,8 @@ p + a {
   }
   .school-hero-actions,
   .school-hero-phone {
+    position: relative;
+    z-index: 1;
     opacity: 0;
     transform: translateY(18px);
     animation: schoolHeroCopyIn .8s ease 4.15s forwards;
